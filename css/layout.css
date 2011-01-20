@@ -1,0 +1,269 @@
+@charset "UTF-8";
+/*===========================================================================
+Layout Style Sheet
+
+
+Author:  Antwan Foster, Software Engineer
+E-mail:  Antwan3000@gmail.com
+website:  www.antwanfoster.com
+
+Date:  February 4, 2008
+
+Desctiption:
+The CSS code is for the Layout of LMPG Ministries website  
+============================================================================*/
+
+
+/* Containter that holds it all in place
+====================================================*/
+#lmpg {
+	width: 80em;
+	margin: 0 auto;
+	padding: 0 1em;
+	background: #fff url(../images/page_shadow.png) repeat-y center top;
+	border-bottom: .5em solid #4d4d4d;
+}
+
+
+/* Master Header
+====================================================*/
+#masthead {
+	position: relative;
+	width: 80em;
+	height: 21.4em;
+	background: #1a1a1a url(../images/lmpg-globe.png) no-repeat right -1px;
+}
+#masthead h1{
+	position: absolute;
+	top: 1.8em;
+	left: 0em;
+	width: 532px;
+	line-height: 107px;
+	background: transparent url(../images/lmpg-heading.png) no-repeat left top;
+	text-indent: -9999px;
+}
+
+
+/* Main Navigation
+====================================================*/
+#main_nav {
+	position: absolute;
+	width: 80em;
+	height: 3.5em;
+	bottom: 0em;	
+	background: transparent url(../images/lmpg-nav-bg.png) repeat;
+	border-top: .4em solid #444;
+	border-bottom: .4em solid #444;
+}
+#main_nav li, #sub_nav li, #footer_nav li {
+	float: left;
+}
+#main_nav  a {
+	display: block;
+	width: 68px;
+	padding: 0 11px;
+	height: 3.5em;
+	text-indent: 0px;	
+}
+#main_nav a p{
+	display: inline;
+	visibility: hidden;
+}
+#main_nav #home{
+	background: transparent url(../images/lmpg-nav.png) no-repeat 12px 13px;
+}
+.home #main_nav #home a, #main_nav #home a:hover{
+	background: #333 url(../images/lmpg-nav.png) no-repeat 12px -13px;
+}
+#main_nav #about a{
+	background: transparent url(../images/lmpg-nav.png) no-repeat -66px 13px;
+}
+.about #main_nav #about a, #main_nav #about a:hover{
+	background: #333 url(../images/lmpg-nav.png) no-repeat -66px -13px;
+}
+#main_nav #ministries a{
+	background: transparent url(../images/lmpg-nav.png) no-repeat -156px 13px;
+}
+.ministries #main_nav #ministries a, #main_nav #ministries a:hover{
+	background: #333 url(../images/lmpg-nav.png) no-repeat -156px -13px;
+}
+#main_nav #services a{
+	background: transparent url(../images/lmpg-nav.png) no-repeat -259px 13px;
+}
+.services #main_nav #services a, #main_nav #services a:hover{
+	background: #333 url(../images/lmpg-nav.png) no-repeat -259px -13px;
+}
+#main_nav #contact a{
+	background: transparent url(../images/lmpg-nav.png) no-repeat -355px 13px;
+}
+.contact #main_nav #contact a, #main_nav #contact a:hover{
+	background: #333 url(../images/lmpg-nav.png) no-repeat -355px -13px;
+}
+#lmpg #main_nav a:hover{
+	background-color: #666;
+}
+#footer_nav{
+	position: absolute;
+	top: 2.5em;
+	left: 1.6em;
+}
+#info #sub_nav {
+	float: right;
+	margin: -4em 1em 0 0;
+}
+#footer_nav a, #sub_nav a {
+	display: block;
+	padding: 0 1em;
+	line-height: 1.5em;
+	border-left: 1px solid #1a1a1a;
+}
+#footer_nav a.first, #sub_nav a.first {
+	border-left: none;
+}
+
+
+/* Content, Page Heading, Search Box
+====================================================*/
+#content {
+	position: relative;
+	width: 76em;
+	margin: 0;
+	padding: 2em;
+	clear: both;
+}
+#pageheading {
+	width: 34.2em;
+	height: 4em;
+	margin: 0 0 0 0;
+}
+#pageheading h2 {
+	line-height: 4.5em;
+	text-indent: -9999px;
+}
+#search {
+	position: absolute;
+	top: 2em;
+	right: 2em;
+}
+#search input[type="text"] {
+	padding: .5em;
+	width: 9em;
+	height: 1em;
+	background: #f2f2f2;
+	border: .2em solid #006937;
+	color: #666;
+}
+
+
+/* Content - Home page
+====================================================*/
+#concepts {
+	position: relative;
+	width: 75em;
+	margin: 1em 0;
+	padding: 1em;
+	text-align: center;
+}
+#concepts .conceptBox {
+	width: 23em;
+	height: 23em;
+	margin: 0 1em;
+	float: left;
+}
+#concepts .smallconceptBox img{
+	margin-top: 1.8em;
+}
+#info {
+	position: relative;
+	width: 60em;
+	margin: 1em 0;
+	border-right: 1px solid #444;
+}
+.fixedHeight{
+	height: 38em;
+}
+
+
+/* Content - All other pages
+====================================================*/
+.section {
+	width: 58em;
+	margin: 1em 0;
+}
+.section dt {
+	padding: .2em 0;
+}
+.section dd {
+	margin: 0 0 .2em 0;
+	padding: .4em 0;
+}
+#scripture {
+	width: 33em;
+}
+#scripture dt {
+	margin-right: 2em;
+}
+#whatislmpg, #mission, #founder {
+	position: absolute;
+}
+ul.paragraphList li{
+	list-style-type: square;
+	margin: .5em 2.2em;
+}
+ul.romanList li{
+	list-style-type: lower-roman;
+}
+#info p span {
+	padding-left: .5em;
+}
+
+
+/* Footer, Footer Nav, Copyright, & Stamp
+====================================================*/
+#footer {
+	position: relative;
+	width: 80em;
+	height: 9em;
+	padding: 0;
+	background: #808080;
+	border-top: .2em solid #444;
+	clear: both;
+}
+#copyright {
+	position: absolute;
+	bottom: .1em;
+	left: 1em;
+	width: 38.8em;
+	text-align: center;
+	line-height: 4em;
+	background: transparent url(../images/copyright-bg.png) no-repeat center center;
+}
+#stamp {
+	float: right;
+	margin: 5.1em 1em 0 0;
+	width: 10em;
+}
+#stamp p {
+	line-height: 2em;
+}
+
+
+/* Forms
+====================================================*/
+fieldset {
+	margin: 1em 0;
+	padding: 1em;
+	border: 1px solid #f93;
+	background: #900;
+}
+legend {
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: .5em;
+	border: 1px solid #f93;
+	background: #c33;
+	color: #ccc;
+}
+label {
+	/*display: block;*/
+}
