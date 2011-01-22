@@ -6,7 +6,7 @@ set :rake, "/usr/local/rvm/gems/ruby-1.9.2-p0@rails3/bin/rake"
 
 set :application, "lmpgministries.org"
 set :repository,  "git@github.com:Antwan3000/lmpgministries-static.git"
-set :deploy_to, "/var/www/projects/#{application}"
+set :deploy_to, "/home/puma/projects/#{application}"
 
 ## SCM Setup
 set :scm, :git  # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
@@ -26,9 +26,9 @@ ssh_options[:keys] = %w(/home/puma/.ssh/authorized_keys)
 ## Less releases, less space wasted
 set :keep_releases, 3
 
-role :web, "#{application}"                          # Your HTTP server, Apache/etc
-#role :app, "#{application}"                          # This may be the same as your `Web` server
-#role :db,  "#{application}", :primary => true        # This is where Rails migrations will run
+role :web, "broadmedium.com"                          # Your HTTP server, Apache/etc
+#role :app, "broadmedium.com"                          # This may be the same as your `Web` server
+#role :db,  "broadmedium.com", :primary => true        # This is where Rails migrations will run
 #role :db,  "your slave db-server here"
 
 # If you are using Passenger mod_rails uncomment this:
